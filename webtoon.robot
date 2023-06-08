@@ -19,23 +19,18 @@ ${locator_confirm_xpath}            xpath=//*[@id="wrap"]/div[5]/div[2]/div/div/
 ${locator_register_confirm_xpath}   xpath=//*[@id="wrap"]/div[5]/div[2]/div/div/a
 
 
-
-
-
-
-
 *** keywords ***
 Open webtoons website
-	Set Selenium Speed      0.5s
-    Open Browser    https://www.webtoons.com/en/     Chrome      options=add_experimental_option("detach", True)
-    Maximize Browser Window
+	    Set Selenium Speed      0.5s
+        Open Browser    https://www.webtoons.com/en/     Chrome      options=add_experimental_option("detach", True)
+        Maximize Browser Window
 
 Click Member
-	Click Element 	${locator_Member_Click}
+	   Click Element 	${locator_Member_Click}
 
 
 Click Register
-    Click Element   ${locator_Click_Register}
+        Click Element   ${locator_Click_Register}
 
 Register email
         Wait Until Element Is Visible       ${locator_Register_Email}    10s
